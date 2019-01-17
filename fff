@@ -657,6 +657,14 @@ key() {
             }
         ;;
 
+        # Tree
+        "${FFF_KEY_TREE:=t}")
+          #cmd_line "tree"
+          clear
+          tree
+          sleep 2 && redraw full
+        ;;
+
         # Create a file.
         "${FFF_KEY_MKFILE:=f}")
             cmd_line "mkfile: "
